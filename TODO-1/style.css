@@ -1,0 +1,872 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.felx2 {
+  position: absolute;
+  background-color: #c1ccba;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+}
+
+/* Menu */
+.menu {
+  width: 28%;
+  border-radius: 15px;
+  height: 90vh;
+  /* border: 1px solid blue; */
+  overflow: scroll;
+  background-color: #e8e8e8;
+}
+.menu .menu-des {
+  /* border: 1px solid red; */
+  margin: 13px 15px;
+}
+
+.tab-des {
+  /* border: 1px solid red; */
+  margin: auto 15px;
+  padding-left: 13px;
+  width: 90%;
+  height: 85%;
+  overflow: scroll;
+}
+
+.menu .menu-des h1 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.menu .tab-des .btn-search button {
+  text-align: left;
+  width: 100%;
+  height: 25px;
+  color: #948e8e;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  border: 1px solid #d8d4d4;
+}
+
+/* Tasks */
+
+.menu .tab-des .tasks {
+  padding: 0;
+  /* border: 1px solid blue; */
+  height: 28%;
+  overflow: scroll;
+}
+
+.menu .tab-des .tasks h2 {
+  margin: 5px auto;
+  /* border: 1px solid blue; */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.menu .tab-des .tasks .sub-tasks h3 {
+  /* border: 1px solid red; */
+  margin: 5px;
+  font-size: 15px;
+  color: #272727c5;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.menu .tab-des .tasks .sub-tasks h3.st_IncompleteTasks span.st_totalIT {
+  /* border: 1px solid red; */
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  background-color: #c294947d;
+  border-radius: 5px;
+  margin: 3px 1vw 3px 0;
+}
+
+.menu .tab-des .tasks .sub-tasks h3.st_Completed_Tasks span.st_totalCT {
+  /* border: 1px solid red; */
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  background-color: #c294947d;
+  border-radius: 5px;
+  margin: 3px 1vw 3px 0;
+}
+
+.menu .tab-des .tasks .sub-tasks h3.st_Toady span.st_totalTdy {
+  /* border: 1px solid red; */
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  background-color: #c294947d;
+  border-radius: 5px;
+  margin: 3px 1vw 3px 0;
+}
+
+.menu .tab-des .tasks .sub-tasks h3.st_Upcoming span.st_totalUC {
+  /* border: 1px solid red; */
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 2px;
+  background-color: #c294947d;
+  border-radius: 5px;
+  margin: 3px 1vw 3px 0;
+}
+
+.menu .tab-des .tasks .sub-tasks h3:hover {
+  color: #000;
+  border-radius: 5px;
+  background-color: #d8d4d4;
+  border: 1px solid #d8d4d4;
+}
+
+/* Lists */
+
+.menu .tab-des .lists {
+  margin: 12px auto;
+  /* border: 1px solid blue; */
+  height: 28%;
+}
+
+.menu .tab-des .lists h2 {
+  margin: 5px auto;
+  /* border: 1px solid blue; */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.menu .tab-des .lists .sub-lists {
+  /* border: 1px solid red; */
+  overflow: scroll;
+  height: 70%;
+}
+
+.menu .tab-des .lists .sub-lists h3 {
+  /* border: 1px solid red; */
+  margin: 5px;
+  font-size: 15px;
+  color: #272727c5;
+  width: 95%;
+  cursor: pointer;
+}
+
+.menu .tab-des .lists .sub-lists h3:hover {
+  color: #000;
+  border-radius: 5px;
+  background-color: #d8d4d4;
+  border: 1px solid #d8d4d4;
+}
+
+.menu .tab-des .lists .btn-addNewList button {
+  text-align: left;
+  width: 100%;
+  height: 25px;
+  color: #948e8e;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  border: 1px solid #d8d4d4;
+}
+
+/* Tags */
+
+.menu .tab-des .tags {
+  margin: 12px auto;
+  /* border: 1px solid blue; */
+  height: 28%;
+  overflow: scroll;
+}
+
+.menu .tab-des .tags h2 {
+  margin: 5px auto;
+  /* border: 1px solid blue; */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.menu .tab-des .tags .sub-tags h3 {
+  /* border: 1px solid red; */
+  margin: 5px;
+  font-size: 15px;
+  color: #272727c5;
+  width: 95%;
+  cursor: pointer;
+}
+
+.menu .tab-des .tags .sub-tags h3:hover {
+  color: #000;
+  border-radius: 5px;
+  background-color: #d8d4d4;
+  border: 1px solid #d8d4d4;
+}
+
+.menu .tab-des .log-in button {
+  text-align: left;
+  width: 100%;
+  height: 25px;
+  color: #d95555df;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto;
+  border: 1px solid #473a3a;
+  transition: background-color 2s, height 0.5s;
+}
+
+.menu .tab-des .log-in button:hover {
+  color: #353535;
+  height: 23px;
+  background-color: #d955551e;
+}
+
+/* Today's Task */
+
+.today {
+  border-radius: 15px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 68%;
+  height: 90vh;
+}
+
+.listedTask {
+  /* border: 1px solid green; */
+  width: 50%;
+  height: 90vh;
+}
+
+.inside {
+  /* border: 1px solid green; */
+  margin: 13px 15px;
+  height: 50.5%;
+  /* overflow: scroll; */
+}
+
+.btn-addNewTask button {
+  /* border: 1px solid black; */
+  box-shadow: none;
+  background-color: #ffffff47;
+  margin: 10px auto;
+  text-align: left;
+  width: 100%;
+  height: 25px;
+  color: #8b7171df;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 2s, height 0.5s;
+}
+
+.btn-addNewTask button:hover {
+  color: #1c1818;
+  height: 27px;
+  background-color: #9a5a5a1e;
+}
+
+.current-tasks-list {
+  /* border: 1px solid red; */
+  margin: 3px 15px;
+  height: 33vh;
+  overflow: scroll;
+}
+
+.current-tasks-list .overviewTasks {
+  /* border: 1px solid red; */
+  font-size: 25px;
+  margin: 0 auto 8px auto;
+  display: flex;
+}
+
+.current-tasks-list .overviewTasks .overviewNaming {
+  /* border: 1px solid red; */
+  width: 20%;
+  font-size: smaller;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+}
+
+.current-tasks-list .overviewTasks .overviewNaming h5 {
+  /* border: 1px solid red; */
+  font-size: smaller;
+  margin: 2px auto;
+  width: 90%;
+  cursor: pointer;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px rgb(202, 202, 202);
+  color: #585858;
+}
+
+.current-tasks-list .overviewTasks .overviewNaming h5:hover {
+  background-color: #bdbdbd4e;
+  color: #00000099;
+  box-shadow: 1px 1px 1px #b7a1a1 inset;
+}
+
+/* .current-tasks-list ul{
+      border: 1px solid red;
+      margin: 0;
+      overflow: scroll;
+      height: 33vh;
+  } */
+
+.current-tasks-list ul li {
+  /* border: 1px solid red; */
+  width: 80%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: smaller;
+  list-style-type: none;
+  padding: 5px 10px;
+  margin: 3px auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s, box-shadow 1s;
+}
+
+.current-tasks-list ul li:hover {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgb(240, 240, 240);
+  /* background-color: #d8d4d4; */
+}
+
+.hr {
+  border: 1px solid rgb(45, 45, 45);
+  height: 1px;
+  width: 100%;
+  margin: 32px auto 0 auto;
+}
+
+/* Pagination page number */
+
+.inside .pageNo {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+.inside .pageNo .number {
+  /* border: 1px solid black; */
+  width: 58%;
+  margin: auto 0px auto 45px;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.inside .pageNo .number .number-btn {
+  /* border: 1px solid red; */
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inside .pageNo h4 {
+  /* border: 1px solid red; */
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  color: #585858;
+  margin: auto 0;
+  padding: 0px 4px;
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 1px 1px 5px rgb(129, 129, 129);
+}
+
+.inside .pageNo .number .number-btn button {
+  color: #685c5c;
+  box-shadow: 1px 1px 1px rgb(214, 214, 214);
+  background-color: #ffffff47;
+  margin: auto;
+  text-align: left;
+  width: 25px;
+  height: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.inside .pageNo .number button:hover {
+  background-color: #ededed;
+  color: #000;
+  box-shadow: 1px 1px 1px #b7a1a1 inset;
+}
+
+.inside .pageNo .number span {
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(129, 129, 129);
+  /* border: 1px solid red; */
+  width: 30%;
+  margin: auto;
+  cursor: pointer;
+  color: #585858;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+.inside .pageNo .number span:hover {
+  background-color: #ededed;
+  color: #000;
+  box-shadow: 1px 1px 1px #b7a1a1 inset;
+}
+
+.inside .pageNo h4 {
+  /* border: 1px solid black; */
+  font-size: small;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(129, 129, 129);
+  /* border: 1px solid red; */
+  width: auto;
+  margin: auto;
+  cursor: pointer;
+  color: #585858;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s, box-shadow 0.5s;
+}
+
+/* ! Remaining Tasks */
+
+.optlst {
+  /* border: 1px solid black; */
+  font-size: 22px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  margin: 5px 15px 16px 15px;
+}
+
+.selected-task {
+  /* border: 1px solid black; */
+  height: 33vh;
+  overflow: scroll;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 100;
+  margin: 5px 15px 0 15px;
+}
+
+/* ! In Detailed Tasks */
+.indetailTask {
+  background-color: #e8e8e88d;
+  display: none;
+  width: 40%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: auto;
+  height: 88vh;
+  box-shadow: 3px 1px 12px 2px rgba(129, 129, 129, 0.479);
+  border-radius: 15px;
+  /* border: 1px solid #000; */
+}
+
+.indetailTask .aboutTask {
+  /* border: 1px solid red; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin: 12px auto 0 auto;
+}
+
+.indetailTask .task-name {
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  font-size: 20px;
+  width: 25vw;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+}
+
+.indetailTask .task-name h2 {
+  /* border: 1px solid red; */
+  font-size: 26px;
+  margin: 18px 0 8px 0;
+}
+
+.indetailTask .task-name h5 {
+  /* border: 1px solid black; */
+  color: #353535bb;
+  font-weight: 900;
+  font-size: 18px;
+  background-color: #c1ccba63;
+  border-radius: 5px;
+  margin: auto;
+  width: 25vw;
+  padding: 5px 8px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.indetailTask .task-name p {
+  /* border: 1px solid black; */
+  color: #353535bb;
+  font-size: 18px;
+  justify-content: space-between;
+  text-align: justify;
+  background-color: #c1ccba63;
+  font-weight: 500;
+  border-radius: 5px;
+  margin: auto;
+  width: 25vw;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px 8px;
+  height: 20vh;
+  overflow-y: scroll;
+}
+/* ! Make Changes */
+
+.makeChanges {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  /* border: 1px solid black; */
+  width: 25vw;
+  font-weight: 900;
+  font-size: 25px;
+  margin: 20px auto 0 auto;
+  color: #46ade4;
+}
+
+.additional-lists {
+  /* border: 1px solid black; */
+  width: 25vw;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.additional-lists .selectLists {
+  /* border: 1px solid green; */
+  width: 45%;
+  display: inline-block;
+  justify-content: left;
+  text-align: left;
+}
+
+.additional-lists .selectLists .naming {
+  /* border: 1px solid green; */
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.additional-lists .selectLists label {
+  /* border: 1px solid green; */
+  padding: 5px 10px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.additional-lists .selectLists select {
+  /* border: 1px solid green; */
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #d6dcd3;
+  border-radius: 5px;
+}
+
+.additional-lists .dueDate {
+  /* border: 1px solid red; */
+  width: 45%;
+}
+
+.additional-lists .dueDate .naming {
+  /* border: 1px solid red; */
+  padding: 5px 10px;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.additional-lists .dueDate input {
+  /* border: 1px solid red; */
+  border: none;
+  box-shadow: none;
+  outline: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #d6dcd3;
+  border-radius: 5px;
+}
+
+.makeChaneBtn {
+  width: 25vw;
+  margin: auto;
+}
+
+.makeChaneBtn button {
+  /* border: 1px solid red; */
+  padding: 5px 10px;
+  width: 25vw;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #46ade46d;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+/* ! Modal Page */
+
+.modal-main {
+  /* border: 1px solid red; */
+  display: none;
+  width: 93vw;
+  height: 80vh;
+  margin: 50px 60px;
+  position: absolute;
+  z-index: 100;
+  background-color: #d6dcd3e7;
+  border-radius: 15px;
+  top: 55px;
+}
+
+.close-btnX {
+  /* border: 1px solid red; */
+  justify-content: right;
+  text-align: right;
+  position: absolute;
+  right: 20px;
+}
+.close-btnX button {
+  font-size: 20px;
+  margin: 10px 10px 0 0;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  &:hover {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+    transition: background-color 0.5s, color 0.5s;
+  }
+}
+
+.about_task {
+  /* border: 1px solid black; */
+  justify-content: center;
+  text-align: center;
+  width: 90vw;
+  height: 80vh;
+  display: block;
+}
+
+.md_task_name {
+  /* border: 1px solid red; */
+  height: 67vh;
+  margin: 40px auto;
+  width: 80vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.md_task_name h3 {
+  /* border: 1px solid red; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  justify-content: center;
+  text-align: center;
+  width: 50vw;
+  margin: 12px auto;
+  font-size: 25px;
+  color: #303030;
+}
+
+.md_indetailTask {
+  border: 3px solid rgba(0, 0, 0, 0.137);
+  width: 80%;
+  overflow: scroll;
+  background-color: rgba(214, 100, 100, 0.046);
+  margin: 0 auto;
+  height: 55vh;
+  border-radius: 5px;
+  justify-content: center;
+  text-align: center;
+}
+
+.md_task-name {
+  color: #303030;
+  /* border: 1px solid red; */
+  font-size: 23px;
+  font-weight: 900;
+  text-align: center;
+  width: 50vw;
+  margin: auto;
+}
+
+.md_task-name input {
+  color: #585858;
+  /* border: 1px solid red; */
+  /* border: none; */
+  outline: none;
+  margin: 8px 0;
+  text-align: left;
+  width: 50vw;
+  background-color: #76757577;
+  padding: 15px;
+  color: #000;
+  height: 25px;
+  outline: 0;
+  /* border: none; */
+}
+
+.md_task-name textarea {
+  color: #585858;
+  background-color: #76757577;
+  outline: 0;
+  padding: 15px;
+  color: #000;
+  /* border: 1px solid red; */
+  text-align: left;
+  border: none;
+  width: 50vw;
+  height: auto;
+  height: 25px;
+}
+
+.md_task-name textarea.fixHeight {
+  margin: 8px 0;
+  height: 10em;
+  /* border: none; */
+  resize: none;
+}
+
+.md_additional-lists {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 62.5%;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.md_taskLists select {
+  /* border: 1px solid red; */
+  border: none;
+  margin: auto;
+  font-size: 15px;
+  display: flex;
+  background-color: #5858583b;
+  padding: 0 2px;
+  justify-content: center;
+  text-align: center;
+}
+
+.md_naming h3 {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 100%;
+  margin: 12px auto;
+  /* justify-content: center; */
+  /* justify-content: space-between; */
+  text-align: center;
+}
+
+.md_selectLists label,
+select {
+  /* border: 1px solid red; */
+  border: none;
+  margin: auto;
+  font-size: 15px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+.md_selectLists select {
+  background-color: #5858583b;
+  padding: 0 2px;
+  justify-content: center;
+  text-align: center;
+}
+
+.md_dueDate input {
+  /* border: 1px solid green; */
+  border: none;
+  outline: none;
+  margin: auto;
+  background-color: #5858583b;
+  padding: 0 2px;
+  font-size: 15px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+}
+
+/* ! Delete and Save Changes */
+.md_delete-save {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: right;
+  /* padding: 0 20px; */
+  width: 50vw;
+  margin: 20px auto;
+}
+
+.md_delete-save button {
+  border: 1px solid #00000063;
+  background-color: #5858584c;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  /* border: none; */
+  outline: none;
+  cursor: pointer;
+  margin: 0 12px;
+
+  &:hover {
+    background-color: #f9f9f9;
+  }
+}
