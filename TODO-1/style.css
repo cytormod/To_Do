@@ -495,7 +495,7 @@
 /* ! In Detailed Tasks */
 .indetailTask {
   background-color: #e8e8e88d;
-  display: none;
+  /* display: none; */
   width: 40%;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin: auto;

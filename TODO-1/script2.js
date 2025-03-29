@@ -2,6 +2,7 @@
 // & Today's task area
 const taskCreate = document.querySelector(".created_task");
 const btnNewTaskEvent = document.querySelector(".btnNewTask");
+const overviewBtn = document.querySelector(".overviewNaming");
 
 // & Modal Window
 const blurryBackground = document.querySelector(".felx2");
@@ -75,8 +76,72 @@ createTask.addEventListener("click", () => {
                   </div>
                   </div>
       `;
-  console.log(taskCreate);
+
   console.log(mdtaskName.value, description.value, todaysDate.value);
   console.log(mdTaskLists.lastElementChild.value);
   modalWindow("none", "none");
+});
+
+taskCreate.addEventListener("click", (e) => {
+  const dueDate = mdDueDate.querySelector("input[name='dueDate']");
+  if (e.target.closest(".overviewNaming")) {
+    if (e.target.tagName === "H5" && e.target.textContent === "Overview") {
+      console.log(indetailTaskEve);
+      indetailTaskEve.style.display = "block";
+      indetailTaskEve.innerHTML += `
+        <div class="aboutTask">
+              <h3>About your Task: ${mdtaskName.value}</h3>
+            </div>
+            <div class="task-name">
+              <h2>Your Aim</h2>
+              <br />
+              <h5 class="idtTitle">${mdtaskName.value}</h5>
+
+              <h2>Focus on Why and What</h2>
+              <br />
+              <p class="idtDescription">
+                ${description.value}
+              </p>
+
+              <h2>The Deadline of your Struggle ends in</h2>
+              <br />
+              <h5>${dueDate.value}</h5>
+              <br />
+            </div>
+
+            <!-- ! Additional Lists -->
+
+          <!-- <h3 class="makeChanges">If You Want To make Any changes</h3>
+          <hr />
+          <div class="additional-lists">
+            <div class="selectLists">
+              <div class="naming">
+                <h3>List</h3>
+              </div>
+
+              <label for="selectLists">Select Lists</label><br />
+              <select name="selectLists" id="selectLists">
+                <option value="Personal" class="personalOpt">Personal</option>
+                <option value="Work" class="workOpt">Work</option>
+                <option value="List" class="ListOpt">List</option>
+                <option value="Add-List" class="AddListOpt">+ Add List</option>
+              </select>
+            </div>
+
+            <div class="dueDate">
+              <div class="naming">
+                <h3>Due Date</h3>
+              </div>
+              <input type="date" name="dueDate" id="dueDate" /><br />
+            </div>
+          </div> -->
+
+           <!-- ! Delete and Save Buttons -->
+
+                <div class="makeChaneBtn">
+            <button class="changesbtn">Make Changes</button><br />
+        </div>
+          `;
+    }
+  }
 });
