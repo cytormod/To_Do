@@ -293,16 +293,21 @@
   margin: 3px 15px;
   height: 33vh;
   overflow: scroll;
+  display: block;
 }
 
-.current-tasks-list .overviewTasks {
+.current-tasks-list .created_task {
+  display: block;
+}
+
+.overviewTasks {
   /* border: 1px solid red; */
   font-size: 25px;
   margin: 0 auto 8px auto;
   display: flex;
 }
 
-.current-tasks-list .overviewTasks .overviewNaming {
+.overviewTasks .overviewNaming {
   /* border: 1px solid red; */
   width: 20%;
   font-size: smaller;
@@ -313,7 +318,7 @@
   align-items: end;
 }
 
-.current-tasks-list .overviewTasks .overviewNaming h5 {
+.overviewTasks .overviewNaming h5 {
   /* border: 1px solid red; */
   font-size: smaller;
   margin: 2px auto;
@@ -325,7 +330,7 @@
   color: #585858;
 }
 
-.current-tasks-list .overviewTasks .overviewNaming h5:hover {
+.overviewTasks .overviewNaming h5:hover {
   background-color: #bdbdbd4e;
   color: #00000099;
   box-shadow: 1px 1px 1px #b7a1a1 inset;
